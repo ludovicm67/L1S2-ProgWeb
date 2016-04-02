@@ -23,7 +23,7 @@
     * Des cases à cocher pour activer/désactiver la réception d'une newsletter et l'acceptation ou le
     refus des conditions d'utilisation
 
-    *  Un bouton de soumission du formulaire
+    * Un bouton de soumission du formulaire
 
 Vous aurez soin d'utiliser les éléments de formulaire adaptés.
 
