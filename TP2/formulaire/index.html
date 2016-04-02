@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<title>Formulaire</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="global">
+		<h1>Formulaire</h1>
+		<h2>Formulaire d'inscription super génial</h2>
+		<div id="result"></div>
+		<form>
+			<label>Votre adresse mail : <input type="email" name="mail" placeholder="Adresse mail"></label>
+			<label>Votre pseudo : <input type="text" name="pseudo" placeholder="Pseudonyme"></label>
+			<label>Votre mot de passe : <input type="password" name="passwd" placeholder="Mot de passe"></label>
+			<label>Votre numéro de téléphone : <input type="tel" name="phone" placeholder="Numéro de téléphone"></label>
+			<label>
+				Sélectionnez votre pays :
+				<select name="country">
+					<option value="FR">France</option>
+					<option value="DE">Allemagne</option>
+					<option value="EN">Angleterre</option>
+				</select>
+			</label>
+			<p class="label">Sélectionnez votre sexe :</p>
+			<label><input type="radio" name="sex" value="M"> Homme</label>
+			<label><input type="radio" name="sex" value="F"> Femme</label>
+			<label><input type="radio" name="sex" value="O"> Autre</label>
+			<label><input type="checkbox" name="newsletter" value="1"> J'accepte de recevoir la newsletter du site </label>
+			<label><input type="checkbox" name="cgu" value="1"> J'accepte les Conditions Générales d'Utilisation (CGU)</label>
+			<input type="submit" value="» Envoyer «">
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+button, input {
+	width: 25%;
+	height: 20vh;
+	font-size: 2em;
+}
+input {
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+	border: 15px solid #7f8c8d;
+}
+button {
+	background-color: #bdc3c7;
+	border: none;
+	transition: 0.4s;
+}
+button:hover {
+	background-color: #ecf0f1;
+}
