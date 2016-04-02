@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<title>Calculatrice PGCD</title>
+	<style>
+		/* On enlève les marges */
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		/* On change le fond, et on met une police sans-serif (c'est plus joli :p )*/
+		body{
+			background-color: #212121;
+			font-family: sans-serif;
+		}
+
+		/* On centre la partie centrale, avec un fond blanc */
+		.global{
+			padding: 25px;
+			width: 100%;
+			max-width: 960px;
+			margin: 50px auto 0 auto;
+			background-color: #fff;
+		}
+		
+		/* On ajuste les marges pour la barre horizontale */
+		hr{
+			margin: 5px 0 20px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="global">
+		<h1>Calcul du PGCD</h1>
+		<p><em>Ce petit outil permet de calculer rapidement le PGCD de deux nombres entiers positifs.</em></p>
+		<hr>
+		<label for="nb1">Nombre 1 :</label>
+		<input id="nb1" type="text" value="42" placeholder="Entrez le nombre 1..."><br>
+		<label for="nb2">Nombre 2 :</label>
+		<input id="nb2" type="text" value="24" placeholder="Entrez le nombre 2...">
+		<p>Le <button id="calculerPgcd">PGCD</button> vaut <b id="result">6</b>.</p>
+	</div>
+	<script>
+
+		// Algorithme d'Euclide pour calculer le pgcd de deux nombres
+		function pgcd(a, b) {
+			while (b>0) {
+				var r = a % b;
+				a = b;
+				b = r;
+			}
+			return a;
+		}
+
+		// On écoute les clics sur le bouton; si tel est le cas on calcule le pgcd
+		document.getElementById("calculerPgcd").addEventListener(
+			"click",
+			function () {
+				var nb1 = parseInt(document.getElementById('nb1').value);
+				var nb2 = parseInt(document.getElementById('nb2').value);
+				document.getElementById('result').innerHTML = pgcd(nb1, nb2);
+			}
+		);
+		
+	</script>
+</body>
+</html>

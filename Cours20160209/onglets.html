@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Onglets</title>
+	<style>
+		/* On enlève les marges */
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		/* On change le fond, et on met une police sans-serif (c'est plus joli :p )*/
+		body{
+			background-color: #212121;
+			font-family: sans-serif;
+		}
+
+		/* On centre la partie centrale, avec un fond blanc */
+		.global{
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: 25px;
+			width: 100%;
+			max-width: 960px;
+			margin: 50px auto 0 auto;
+			background-color: #fff;
+		}
+
+		h2{
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		nav {
+			width: 24%;
+			float: left;
+		}
+		.content{
+			width: 75%;
+			margin-left: 25%;
+		}
+		li{
+			margin-left: 25px;
+			margin-top: 8px;
+		}
+		nav li{
+			display: block;
+		}
+
+
+		/* On initialise l'affichage des onglets par défaut (tous cachés sauf le 1er) */
+		.onglet{
+			display: none;
+		}
+		#onglet1{
+			display: block;
+		}
+
+		/* Règles pour les petits écrans */
+		@media screen and (max-width: 750px) {
+			nav {
+				width: 100%;
+				float: none;
+				padding: 0 20px 20px 20px;
+				background-color: #ddd;
+			}
+			.content{
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="global">
+
+		<h1>Onglets</h1>
+		<p><em>Page où se trouve de très beaux onglets.. L☺L !</em></p>
+		<hr>
+
+		<nav>
+			<h2>Menu :</h2>
+			<ul>
+				<li><button class="menuButton" data-target="onglet1">Onglet 1</button></li>
+				<li><button class="menuButton" data-target="onglet2">Onglet 2</button></li>
+				<li><button class="menuButton" data-target="onglet3">Onglet 3</button></li>
+				<li><button class="menuButton" data-target="onglet4">Onglet 4</button></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="onglet" id="onglet1">
+				<h2>Onglet 1</h2>
+				<p>Contenu de l'onglet n°1</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vitae minus accusamus corporis assumenda quaerat nulla commodi quo placeat aliquam qui illo ratione amet, totam, similique nostrum magnam dicta delectus.</p>
+				<p>Doloremque quis temporibus delectus velit ducimus eveniet voluptatem modi voluptas dolores ipsam necessitatibus, suscipit ipsa harum repellat mollitia explicabo vel eius, at eos, nemo quisquam obcaecati aspernatur culpa. Nulla, non?</p>
+				<p>Quas illum reprehenderit aperiam deserunt ipsum dolore quam earum deleniti commodi iusto ex, placeat ad autem quia facilis laboriosam aut odio quo id minima, aspernatur eius minus quis doloribus. Ullam.</p>
+				<p>Tenetur modi ab dolores ullam soluta sint, ex, impedit aut omnis nesciunt reprehenderit architecto laudantium recusandae quam suscipit praesentium atque alias in fugit non ipsam! Provident nam voluptatem debitis quam.</p>
+				<p>Corporis placeat voluptatem temporibus nostrum itaque nam explicabo dignissimos minus autem voluptatum veniam error velit distinctio inventore eveniet quod consectetur nulla culpa earum, officia omnis! Officiis a in quaerat, illo.</p>
+				<p>Doloremque fugiat mollitia odio accusantium earum quam itaque commodi aut nostrum, autem nesciunt natus, suscipit iste nisi consequatur. Neque nemo reiciendis harum doloremque praesentium? Amet expedita natus non, excepturi delectus.</p>
+				<p>Veritatis aliquid nihil cumque alias, inventore necessitatibus fugit dicta optio dolorum eligendi nisi, soluta aut tempora nobis labore molestiae minima totam itaque voluptatibus architecto facilis consectetur earum quae maxime! Laboriosam.</p>
+				<p>Ea exercitationem accusantium nihil, ipsum laudantium quam recusandae, quisquam, veniam praesentium minus quasi? Nostrum provident soluta sint quo, eos recusandae, nulla accusantium, laboriosam cum obcaecati nesciunt eum voluptate ab? Eius.</p>
+				<p>Tempora officia dolorum modi commodi harum magni soluta dolorem, accusamus id, culpa voluptatum asperiores fuga nihil excepturi ea rerum dolores blanditiis tempore, nulla est placeat repudiandae ab. Modi, voluptates, enim.</p>
+				<p>Necessitatibus, perferendis doloribus eaque dolor provident quibusdam id cumque iste ut recusandae nihil explicabo pariatur accusantium repellat quod facilis perspiciatis maiores libero et ratione cupiditate delectus iusto! Facilis, assumenda architecto.</p>
+			</div>
+			<div class="onglet" id="onglet2">
+				<h2>Onglet 2</h2>
+				<p>Contenu de l'onglet n°2</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae deleniti blanditiis temporibus laboriosam ipsa aut quidem, doloribus dolores perferendis amet praesentium est. Ullam sed expedita rem perspiciatis accusantium perferendis porro.</p>
+				<p>Laboriosam, officia minima praesentium tempore voluptatibus natus, ullam aperiam nulla cupiditate error asperiores voluptatum consectetur dolor. Quidem exercitationem dolor impedit alias cupiditate quisquam magni, nobis amet et, molestias eum laborum.</p>
+				<p>Dicta nobis, deserunt dolores ipsum pariatur iure dignissimos nemo sapiente quas esse molestiae perferendis aspernatur quasi tempora sint eum delectus mollitia harum obcaecati id, corrupti repellendus veritatis quia facilis. Et!</p>
+				<p>Modi ad odio, distinctio aliquam soluta dolores, exercitationem sint possimus officiis impedit recusandae esse quis, nesciunt accusamus, voluptate libero. Inventore ab perspiciatis blanditiis natus, explicabo beatae ea reprehenderit. Qui, commodi.</p>
+				<p>Facilis sint eius et, quo fugiat consectetur recusandae nihil molestias voluptas beatae doloribus magnam accusamus itaque quia omnis harum cumque placeat autem debitis, qui voluptatem reprehenderit iste dignissimos facere quod.</p>
+				<p>Adipisci suscipit sit sed molestiae facere veritatis blanditiis praesentium magnam commodi est! Eligendi laborum, quaerat obcaecati deserunt incidunt provident maxime consequuntur nulla aliquam, in dicta, quo cum, veritatis. Sequi, laborum.</p>
+				<p>Numquam minima magnam placeat, vero harum, obcaecati. Explicabo nemo maxime dolor assumenda quidem, molestiae enim itaque vitae dolorum vero commodi perspiciatis voluptatum, error illum minus cupiditate quia ipsa nam necessitatibus?</p>
+				<p>Iusto deleniti exercitationem ipsum officia tempore ut fugit perferendis assumenda, quam dolor alias magni dolorem consequatur pariatur quo quaerat fugiat eligendi, expedita commodi. Qui illo veritatis dolorem, voluptates. Assumenda, ipsam?</p>
+				<p>Consequuntur minus sint odit minima, accusantium libero! Temporibus, autem atque, doloribus quaerat doloremque qui voluptates? Eveniet aut saepe, nam harum atque numquam dolores eius totam doloribus odit, adipisci, quisquam odio.</p>
+				<p>Asperiores voluptates consequuntur nostrum vel, eligendi illum nesciunt. Quasi atque explicabo illum perspiciatis placeat ullam nostrum eveniet fugit quisquam quo, in earum voluptatem corporis expedita dicta magni ex ipsum, eum!</p>
+			</div>
+			<div class="onglet" id="onglet3">
+				<h2>Onglet 3</h2>
+				<p>Contenu de l'onglet n°3</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem esse odit mollitia vero, minus libero impedit officia facilis suscipit aperiam totam. Officia perspiciatis exercitationem nisi assumenda harum unde neque.</p>
+				<p>Et corrupti, nam nostrum nobis recusandae, iure provident? Tempore voluptate nihil rem veritatis, quidem totam ratione ipsum enim aliquid omnis quaerat earum est eaque dicta iure distinctio quo? Voluptate, quas.</p>
+				<p>Modi autem rerum distinctio dolorem recusandae quam sunt necessitatibus voluptas facilis incidunt, tenetur debitis ipsam repellat non odio soluta culpa delectus. Quam, voluptates impedit fugit ea architecto debitis fugiat cumque?</p>
+				<p>Ex quod, unde rerum tempore omnis labore adipisci error expedita hic repellat ad quae impedit debitis asperiores, fuga voluptas quia, rem. Officia perspiciatis, saepe ratione, veniam dolor rerum eos dignissimos.</p>
+				<p>Alias incidunt id reiciendis, fuga consequuntur est rem neque quos quo sed natus a corporis dolores reprehenderit totam labore dolorem repudiandae. Repellat aut ducimus odio aliquid libero voluptatibus! Veniam, corporis.</p>
+				<p>Debitis aliquam consequuntur rerum quisquam natus quam veritatis dolorem perferendis, tenetur minima at quidem quis explicabo officia suscipit deleniti neque facere fugiat quos reprehenderit, voluptatibus asperiores. Ad quo consequatur fugiat!</p>
+				<p>Perferendis maiores quas a vitae dicta, iure enim ea nostrum nulla natus reprehenderit debitis ab placeat reiciendis eos consequuntur suscipit aperiam, ex consectetur quisquam molestiae aspernatur possimus voluptates rem! Alias.</p>
+				<p>Laborum quod consequatur, ex error consectetur minus ratione veritatis harum commodi, esse explicabo facere fugit dignissimos optio accusamus sequi, ipsa quos illo. Voluptas nulla, sunt, ullam veniam deserunt voluptatum nisi.</p>
+				<p>Placeat porro ea nihil quia enim tempore debitis id rem a unde, itaque consectetur. Id beatae, incidunt fuga voluptatum minus optio, porro earum natus similique soluta, numquam qui dignissimos sit.</p>
+				<p>Mollitia repellendus consequuntur, quos dolores accusantium. Voluptatibus natus voluptates error quae inventore deserunt eligendi nobis, laudantium atque voluptatum possimus cupiditate, eveniet porro! Sint culpa, dignissimos molestiae commodi, corporis minus asperiores.</p>
+			</div>
+			<div class="onglet" id="onglet4">
+				<h2>Onglet 4</h2>
+				<p>Contenu de l'onglet n°4</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore, tenetur accusamus quis, ea laborum voluptatem consequuntur, neque ut sint atque? Amet provident maxime modi, voluptatem in, unde qui dolorem.</p>
+				<p>Enim sit quia qui architecto sint placeat dolorum accusamus odit modi nobis optio doloribus nostrum eius, velit, doloremque unde quis quaerat inventore ut iste, autem dolore, facilis sunt provident. Nisi.</p>
+				<p>Autem ipsam reprehenderit veniam aspernatur labore ipsa maxime eos nulla, minima expedita ullam dicta eius quia accusantium illum, eum placeat sed quasi laborum voluptate sit quibusdam optio unde. Aut, enim.</p>
+				<p>Mollitia similique ducimus sed aliquam saepe ex repellendus a dicta et expedita quos, laboriosam voluptate veritatis distinctio pariatur magni quam numquam eum accusantium vero doloremque eius. Sequi esse similique fugiat.</p>
+				<p>Ad sed minima sapiente, odit totam. Accusamus voluptatum itaque alias cum? Consectetur id a sequi quis, harum asperiores fugit eius error repudiandae cumque ab blanditiis eligendi exercitationem odio, atque vero?</p>
+				<p>Repellat expedita nam tenetur perferendis qui laboriosam rerum. Eius dicta totam, hic quis nemo, quibusdam repudiandae illum molestias veniam ipsa magni sapiente iusto. Magnam reprehenderit cupiditate accusamus illo corporis consequuntur!</p>
+				<p>Necessitatibus pariatur voluptas corporis aliquid blanditiis, repudiandae alias consectetur odio nam ipsum quidem ab tempore recusandae quam esse. Omnis, suscipit officia doloribus dolore. Expedita sapiente temporibus quam accusantium deserunt assumenda!</p>
+				<p>Quidem incidunt soluta fugiat ut. Ullam, perspiciatis veniam labore eius accusamus dolore iure minima? Dolor voluptates, suscipit nisi officia totam, deserunt et eligendi iusto ab dolorum consequuntur vitae. Labore, tempora!</p>
+				<p>Alias quae earum sit provident obcaecati tenetur eligendi minus nam eveniet! Libero tempore iure laborum nihil esse perferendis aperiam, ad nemo, incidunt modi dolore architecto fugiat assumenda maiores, voluptatem. Deserunt.</p>
+				<p>Fugiat itaque ex veritatis, adipisci eligendi blanditiis sequi cumque architecto ab neque molestiae, eaque beatae accusamus. Nobis atque odio, enim libero, saepe explicabo laudantium error id accusamus mollitia exercitationem cum.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		var allButtons = document.querySelectorAll('.menuButton');
+		for (var i = 0; i < allButtons.length; i++) {
+			allButtons[i].addEventListener(
+				"click",
+				function () {
+					var allOnglets = document.querySelectorAll('.onglet');
+					for (var j = 0; j < allOnglets.length; j++) {
+						allOnglets[j].style.display = 'none';
+					}
+					document.getElementById(this.dataset.target).style.display = 'block';
+				}
+			)
+		}
+	</script>
+</body>
+</html>
