@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Mon super CV</title>
+	<style>
+		/* On enlève les marges */
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		/* On change le fond, et on met une police sans-serif (c'est plus joli :p )*/
+		body{
+			background-color: #212121;
+			font-family: sans-serif;
+		}
+
+		/* On centre la partie centrale, avec un fond blanc */
+		.global{
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: 25px;
+			width: 100%;
+			max-width: 960px;
+			margin: 50px auto 0 auto;
+			background-color: #fff;
+		}
+
+		h2{
+			margin-top: 20px;
+		}
+		nav {
+			width: 24%;
+			float: left;
+		}
+		.content{
+			width: 75%;
+			margin-left: 25%;
+		}
+		li{
+			margin-left: 25px;
+			margin-top: 8px;
+		}
+		nav li{
+			display: block;
+		}
+		nav a{
+			text-decoration: none;
+			color: #212121;
+		}
+		nav p{
+			margin-top: 20px;
+		}
+		li:hover{
+			background-color: #d6d6d6;
+		}
+
+		/* Règles pour les petits écrans */
+		@media screen and (max-width: 750px) {
+			nav {
+				width: 100%;
+				float: none;
+				padding: 0 20px 20px 20px;
+				background-color: #ddd;
+			}
+			.content{
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="global">
+
+		<h1>John Doe</h1>
+		<hr>
+
+		<nav>
+			<h2>Menu :</h2>
+			<ul>
+				<li><a href="#cv-cursus">Cursus scolaire</a></li>
+				<li><a href="#cv-experience">Expériences professionelles</a></li>
+				<li><a href="#cv-langues">Langues vivantes</a></li>
+				<li><a href="#cv-autre">Informations complémentaires</a></li>
+			</ul>
+			<p><strong>Note :</strong><br>
+			<em>De nombreux contenus ont étés générés histoire de voir les liens pointer vers les différentes rubriques du CV.</em></p>
+		</nav>
+
+		<div class="content">
+			<h2 id="cursus">Cursus scolaire :</h2>
+			<ul>
+				<li>Actuellement : Première année de CMI Informatique à Strasbourg</li>
+				<li>2015 : Bac à Lauréat (ah zut, ce n'est pas le mien.. c'est grave docteur ?)</li>
+				<li>2012 : Breuvait du Collège (un très bon brevage, si si, je vous l'assure !)</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nobis vero ullam quae. Repellendus dolores quis tenetur enim distinctio, optio vero, cupiditate commodi eligendi similique laboriosam maxime corporis quasi labore!</li>
+				<li>Nobis aliquam ratione eaque rerum laboriosam error. Blanditiis officiis ipsa pariatur veniam adipisci voluptate deserunt et harum, fuga accusamus. Vitae tenetur facere modi. Suscipit quasi fuga earum dolores! Eos, fuga.</li>
+				<li>Ipsa, inventore, dolorem. Quia laudantium, mollitia velit cumque! Veritatis atque assumenda nihil laboriosam similique maxime aliquid itaque soluta tenetur eaque, dolorem minima delectus molestiae exercitationem voluptatem eum quos ex inventore.</li>
+				<li>Tempora officiis dolores obcaecati doloremque amet totam animi aliquid magnam rerum necessitatibus reiciendis voluptatibus, debitis asperiores, ipsa voluptatem incidunt ut beatae nobis commodi error qui corrupti placeat architecto cupiditate porro.</li>
+				<li>Nobis totam aliquid necessitatibus sed, porro impedit eius dolores praesentium harum a, asperiores minus obcaecati consectetur officia error sapiente! Minus debitis consequuntur et laudantium assumenda delectus doloremque quo facilis deserunt?</li>
+				<li>Nam accusantium architecto explicabo vero maiores nobis nisi ab, nulla doloribus. Nesciunt fuga consectetur modi iusto neque autem, voluptatem atque nam quas, repellat aperiam voluptatibus eaque ratione omnis fugit ipsum?</li>
+				<li>Pariatur ipsum optio, in esse vitae quis autem unde fuga sapiente praesentium provident, labore ratione libero iusto, veritatis fugiat voluptatum dicta, quisquam. Porro voluptatem necessitatibus, maxime vitae quia ipsa tempora.</li>
+				<li>Ducimus nam eaque sint deserunt nobis, assumenda quaerat cum similique, modi illum debitis quas itaque aut, nemo, voluptates hic rem distinctio adipisci exercitationem consequatur. Perspiciatis facilis accusantium, enim laborum esse.</li>
+				<li>Reiciendis rem porro nemo velit totam aliquid error, quisquam nesciunt, at molestias cumque veniam fugiat laboriosam, pariatur harum, architecto consectetur officiis accusamus aspernatur. Quos laudantium consequatur voluptates, debitis unde earum!</li>
+				<li>Quas eos nulla nesciunt laudantium est velit quis inventore vero facilis, molestiae nam eaque unde architecto facere praesentium, quam sunt quo possimus voluptatem nostrum, iure aspernatur repudiandae ratione ipsa, ullam!</li>
+			</ul>
+
+			<h2 id="cv-experience">Expériences professionelles :</h2>
+			<ul>
+				<li>Été 2015 : saisonnier à la NASA</li>
+				<li>2014 : saisonnier pour les Quatre Saisons de Vivaldi</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis libero dolores consequuntur voluptatum pariatur beatae ipsam tempore, omnis fugit alias nihil sapiente quod labore exercitationem, temporibus facere accusantium provident aliquid!</li>
+				<li>Eligendi, voluptatem ullam quos nihil similique nostrum laborum enim placeat consequuntur aliquam vitae itaque provident fuga. Doloribus, minus nobis officia facere, necessitatibus ab id officiis dolorem commodi saepe sunt consequatur.</li>
+				<li>Architecto perspiciatis eos perferendis laudantium explicabo sunt, voluptatibus dolor animi, obcaecati vero, praesentium quos! Quam eligendi possimus, exercitationem vel quo animi, totam, aliquam in quaerat hic consectetur, debitis sint dolore.</li>
+				<li>Tempore, reiciendis, at. Eaque ex et molestias ut, id minus ea eos voluptatibus unde, sequi magni, ipsa quam eius, laborum recusandae necessitatibus qui incidunt. Deleniti facilis distinctio laudantium iusto praesentium?</li>
+				<li>Facilis asperiores eligendi voluptatum modi nesciunt molestias est vel. Voluptatum nulla debitis, neque nesciunt laboriosam tempora iure inventore ea officiis error. Labore distinctio, repellendus repudiandae placeat dignissimos sit quos corporis.</li>
+				<li>Omnis obcaecati similique, illo beatae harum iste, eaque consequatur id temporibus atque, ut repellendus est facilis placeat odio dolorum! Nobis veritatis beatae architecto officiis, obcaecati eveniet dolor dolores tempora, perferendis!</li>
+				<li>Officia, delectus. Laudantium voluptatum accusamus eum atque similique iusto exercitationem nisi distinctio aperiam quas! Veritatis incidunt dignissimos consequatur, vero voluptas! Aliquid corporis repellendus, alias quasi aut aperiam quos rerum sapiente.</li>
+				<li>Amet accusantium recusandae, numquam quaerat dignissimos neque alias magni velit. At similique atque assumenda natus quis quasi quaerat laudantium dignissimos, mollitia temporibus? Magni velit fugiat tempora voluptas est, animi accusantium!</li>
+				<li>Nihil voluptatibus velit placeat, veniam laborum, perferendis facere? Incidunt fugit, deleniti suscipit ut eum unde voluptatibus numquam fuga deserunt aspernatur voluptate animi sequi laudantium eligendi impedit consectetur, saepe excepturi labore.</li>
+				<li>Eveniet facere perspiciatis quis iure tenetur necessitatibus, distinctio aliquid consequuntur omnis ipsa eos fuga illum eius repudiandae temporibus deserunt, tempora iusto assumenda quidem possimus soluta esse vel totam! Dolorem, esse!</li>
+			</ul>
+
+			<h2 id="cv-langues">Langues vivantes :</h2>
+			<ul>
+				<li>Bah déjà pas le latin, car c'est une langue morte....</li>
+				<li>...mais sinon je peux parler toutes les autres langues (Google Traduction Powaaa)</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eum unde illo placeat ab dolor quis aperiam, laudantium dicta nostrum nam blanditiis cumque maxime quia perferendis repellendus, eos, quibusdam nihil.</li>
+				<li>Quis nobis maiores eveniet iste fugiat culpa atque odit, ducimus dolores nisi ipsam molestiae quibusdam optio harum, deserunt id ipsum nam odio illum rerum, nostrum magni animi neque. Odit, fugiat.</li>
+				<li>Adipisci odit, aut enim, similique voluptas repellendus perferendis cupiditate voluptatibus excepturi illum quod, voluptatum animi. Eum dicta excepturi cumque. Adipisci et praesentium voluptates, quaerat facilis? Quaerat mollitia ab accusantium quidem.</li>
+				<li>Quo eaque quia tempore quisquam soluta, fugit et sed, cupiditate velit possimus dolore explicabo excepturi natus numquam dolor eos alias mollitia cumque hic accusamus! Sed in saepe voluptas, magni unde.</li>
+				<li>Accusantium, reprehenderit dolorem, facere, quisquam repudiandae error dolore hic perspiciatis, veniam consectetur id quidem fuga temporibus. Libero, labore praesentium cum consequuntur aperiam adipisci. Voluptatem, debitis. Dignissimos porro commodi vel maxime.</li>
+				<li>Unde mollitia soluta perspiciatis at error corporis officiis, maxime. Similique minima quae fugiat dolorem sapiente non molestiae cumque? Perferendis cum architecto fugit, ipsam possimus tenetur aliquam rem tempore veritatis odio!</li>
+				<li>Nam dicta iure, labore quasi fuga velit perferendis vitae doloribus quae ipsum tempore dolorem, nulla odit expedita sit aspernatur! Voluptas exercitationem adipisci nulla iusto eos saepe ratione quos odio perferendis.</li>
+				<li>Quos soluta excepturi porro perferendis ad commodi voluptatibus tempora possimus et optio! Deserunt, quibusdam quisquam illum, placeat laudantium assumenda esse eaque deleniti sequi veniam officiis cupiditate eligendi eos iste porro.</li>
+				<li>Est dolores nam ea laborum sit pariatur quia ducimus ipsum quis quam consequatur et, incidunt reprehenderit. Sapiente dolore, nemo mollitia provident, quas, assumenda odio fugit adipisci unde, aperiam iure. Tenetur!</li>
+				<li>Magnam quos, commodi aperiam mollitia fugit illum optio, praesentium corrupti amet quisquam, dolore atque illo modi officia animi, quo quaerat molestias cumque pariatur esse ut nostrum! Magnam beatae eveniet, excepturi.</li>
+			</ul>
+
+			<h2 id="cv-autre">Informations complémentaires :</h2>
+			<ul>
+				<li>Je suis gentil, prenez moi SVP !</li>
+				<li>Allez, faites un effort !</li>
+				<li>Bon, </li>
+				<li>Ne lisez pas plus loin...</li>
+				<li>....</li>
+				<li>J'ai dit quoi?</li>
+				<li>.</li>
+				<li>..</li>
+				<li>...</li>
+				<li>..</li>
+				<li>.</li>
+				<li>Bon bah si c'est comme ça remboursez moi le prix du timbre, de l'enveloppe du papier et de l'encre !</li>
+				<li>Et nah !</li>
+				<li>(euh.. par contre seulement si je ne vous l'ai envoyé par lettre postale)</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem unde quis libero, iusto dicta? Quis sequi officiis, rem, non doloremque quaerat cumque quos accusamus a, facilis totam laborum blanditiis mollitia.</li>
+				<li>Laborum consequatur culpa obcaecati nulla, animi voluptas voluptate at excepturi. Repudiandae amet quibusdam a eaque voluptatum alias quis debitis in at, blanditiis sit. Ipsa, odit animi neque! Nesciunt, veritatis, dignissimos?</li>
+				<li>Odio totam asperiores illo quam itaque debitis dicta saepe mollitia perspiciatis molestiae earum repellat tempore, sint delectus eos, harum molestias vitae magni consequatur nostrum numquam quia quos. Velit, odit nam.</li>
+				<li>Nulla delectus cupiditate veniam id quae, in. Eos pariatur, ut asperiores, ad laborum, placeat iste, fugit porro voluptatum obcaecati animi? Aut optio vero est voluptates nihil sapiente a officiis quisquam!</li>
+				<li>Eius, sed obcaecati nemo. Modi nemo, nostrum ea soluta amet, facilis? Eum, maiores, quia! Similique ratione sit voluptatum vero quasi, unde consequuntur culpa labore delectus. Quo cumque harum, doloribus quibusdam!</li>
+				<li>Nemo voluptatum nulla sint in beatae similique corporis, assumenda rem cumque! Voluptatibus libero repellendus nulla ipsum. Eaque recusandae ex aut reprehenderit a neque tempore, et aspernatur earum quisquam corporis odit.</li>
+				<li>Molestiae eaque beatae, doloremque ullam laudantium maxime delectus debitis quia doloribus quidem sit similique dolores repellat? Ipsum totam, laboriosam debitis adipisci rem, recusandae, sapiente nulla at, nam minus temporibus laudantium!</li>
+				<li>Minima aut eaque, magni, enim officiis tempore nulla porro assumenda deserunt quas, asperiores voluptate voluptatum non rerum similique quod. Possimus animi, sed ratione fuga ad aspernatur quod cum amet autem.</li>
+				<li>Nemo quis accusamus magni soluta quidem omnis, perspiciatis architecto illum consectetur, odit nesciunt a labore laudantium consequatur. Officia rerum nihil minus. Culpa quasi sed, excepturi quam numquam ullam et amet.</li>
+				<li>Ratione voluptatem ipsum blanditiis quasi earum illo voluptate sint atque mollitia rerum consectetur adipisci fugit tenetur, nesciunt molestiae vel! Minima, deleniti dolore. Itaque autem dolor enim, odit sapiente aperiam animi.</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

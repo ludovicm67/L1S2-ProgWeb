@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Jardin Zen CSS&nbsp;: La beauté de la conception CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Une démonstration de ce qui peut être réalisé visuellement via la conception basée sur CSS.">
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+	<style>
+		/* On enlève les marges */
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		/* On change le fond, et on met une police sans-serif (c'est plus joli :p )*/
+		body{
+			background-color: #2980b9;
+			font-family: sans-serif;
+		}
+
+		/* On centre la partie centrale, avec un fond blanc */
+		.page-wrapper{
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: 25px;
+			width: 960px;
+			margin: 50px auto 0 auto;
+			background-color: #fff;
+			box-shadow: 0 0 10px #212121;
+		}
+		
+		h1{
+			font-size: 42px;
+		}
+		h3{
+			margin-top: 25px;
+			margin-bottom: 10px;
+		}
+		li{
+			margin-left: 20px;
+			list-style-type: square;
+		}
+		a{
+			color: #2980b9;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		abbr{
+			font-style: italic;
+			border-bottom: 1px dashed #2980b9;
+			cursor: help;
+		}
+		.main{
+			width: 600px;
+			float: left;
+		}
+		.sidebar{
+			border-left: 2px solid #212121;
+			padding-left: 10px;
+			width: 250px;
+			margin-left: 610px;
+		}
+		.summary{
+			margin: 32px -25px 32px -25px;
+			padding: 50px;
+			color: #fff;
+			box-shadow: inset 0 0 20px #212121;
+			background-color: #27ae60;
+		}
+		.summary a{
+			color: #ccc;
+		}
+		.preamble{
+			background-color: #2c3e50;
+			color: #fff;
+			padding: 20px;
+		}
+		footer a{
+			display: inline-block;
+			padding: 10px;
+			color: #fff;
+			background-color: #c0392b;
+		}
+	</style>
+</head>
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+	<section class="intro" id="zen-intro">
+		<header role="banner">
+			<h1>Jardin Zen CSS</h1>
+			<h2>La beauté de la conception <abbr lang="en" title="Cascading Style Sheets">CSS</abbr></h2>
+		</header>
+
+		<div class="summary" id="zen-summary" role="article">
+			<p>Une démonstration de ce qui peut être réalisé via la conception basée sur <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>. Sélectionnez n&#8217;importe quelle feuille de style de la liste pour l&#8217;utiliser sur cette page.</p>
+			<p>Téléchargez les exemples <a href="/examples/index" title="Le code HTML de la source de cette page, ne doit pas être modifié.">HTML</a> et <a href="/examples/style.css" title="Le code CSS d&#8217;exemple de cette page, le fichier que vous pouvez modifier.">CSS</a></p>
+		</div>
+
+		<div class="preamble" id="zen-preamble" role="article">
+			<h3>Le chemin vers l&#8217;éveil</h3>
+			<p>Les reliques dues aux balises spécifiques aux navigateurs, aux <abbr lang="en" title="Document Object Model">DOM</abbr>s incompatibles, au support corrompu de <abbr title="Cascading Style Sheets">CSS</abbr> et aux navigateurs abandonnés, jonchent un chemin sombre et lugubre.</p>
+			<p>Aujourd&#8217;hui, nous devons nous libérer de l&#8217;esprit du passé. La véritable nature du web a été révélée grâce aux efforts continus des gens du <abbr lang="en" title="World Wide Web Consortium">W3C</abbr>, du <abbr lang="en" title="Web Standards Project">WaSP</abbr> et des créateurs des principaux navigateurs.</p>
+			<p>Le Jardin Zen CSS vous invite à vous relaxer et méditer sur les importantes leçons des maîtres. Commencez à voir clairement. Apprenez à utiliser ces techniques consacrées dans une nouvelle méthode stimulante. Ne faites qu&#8217;un avec le web.</p>
+		</div>
+	</section>
+
+	<div class="main supporting" id="zen-supporting" role="main">
+		<div class="explanation" id="zen-explanation" role="article">
+			<h3>Alors, de quoi s'agit-il&nbsp;?</h3>
+			<p>Il faut sans cesse montrer la puissance de <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>. Le Jardin Zen vise à exciter, inspirer et encourager la participation. Pour commencer, regardez quelques designs présents dans la liste. Cliquer sur l&#8217;un d&#8217;eux appliquera son style sur cette page. Le code <abbr lang="en" title="HyperText Markup Language">HTML</abbr> reste le même, seule la feuille de style externe change. Oui, vraiment&nbsp;!</p>
+			<p>Les <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> permettent un contrôle total de la mise en forme d&#8217;un document hypertexte. La seule manière de le démontrer, en stimulant les gens, est de présenter ce que les créatifs peuvent concrêtement réaliser quand on leur confie les rennes. Les concepteurs et les développeurs ont contribué ensemble à la beauté du web, on peut toujours aller plus loin.</p>
+		</div>
+
+		<div class="participation" id="zen-participation" role="article">
+			<h3>Participation</h3>
+			<p>Notre objectif a toujours été de promouvoir les designs de qualité. Vous allez modifier cette page, de solides compétences en <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> sont donc nécessaires. Toutefois les fichiers d&#8217;exemple sont suffisamment commentés pour que même les novices en <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> puissent les utiliser comme point de départ. S&#8217;il vous plaît, consultez le <a href="http://www.mezzoblue.com/zengarden/resources/" title="Une liste de ressources CSS">guide de ressources <abbr lang="en" title="Cascading Style Sheets">CSS</abbr></a> pour des tutoriaux avancés et des astuces sur le développement <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>.</p>
+			<p>Vous pouvez modifier la feuille de style comme bon vous semble, mais pas le code <abbr lang="en" title="HyperText Markup Language">HTML</abbr>. Ceci peut sembler décourageant au début si vous n&#8217;avez jamais travaillé de cette manière, mais servez-vous des liens pour en apprendre plus et utilisez les exemples pour vous guider.</p>
+			<p>Téléchargez les fichiers d&#8217;exemple <a href="/examples/index" title="Le code HTML de la source de cette page, ne doit pas être modifié.">HTML</a> et <a href="/examples/style.css" title="Le code CSS d&#8217;exemple de cette page, le fichier que vous pouvez modifier.">CSS</a> pour travailler sur une copie locale. Une fois que vous avez fini votre chef d&#8217;&oelig;uvre (merci de ne pas soumettre de travaux incomplets), publiez votre document <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> sur le serveur web de votre choix. <a href="http://www.mezzoblue.com/zengarden/submit/" title="Utilisez le formulaire de contact pour nous envoyer votre fichier CSS">Envoyez-nous un lien</a> vers une archive contenant ce fichier et ses ressources associées, et si nous la sélectionnons, elle sera hébergée sur notre propre serveur.</p>
+		</div>
+
+		<div class="benefits" id="zen-benefits" role="article">
+			<h3>Avantages</h3>
+			<p>Pourquoi participer&nbsp;? Pour la reconnaissance, l&#8217;inspiration et pour créer une ressource que nous pouvons tous utiliser pour promouvoir <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>. Ce site sert autant d&#8217;inspiration pour les travailleurs du web en exercice, d&#8217;outil d&#8217;apprentissage pour ceux en devenir que de gallerie des futures techniques que nous pouvons tous attendre.</p>
+		</div>
+
+		<div class="requirements" id="zen-requirements" role="article">
+			<h3>Conditions</h3>
+			<p>Si possible, nous aimerions surtout voir l&#8217;utilisation de <abbr lang="en" title="Cascading Style Sheets, versions 1 et 2">CSS 1 et 2</abbr>. <abbr lang="en" title="Cascading Style Sheets, versions 3 et 4">CSS 3 et 4</abbr> devraient être uniquement limités aux techniques largement implémentées, sinon des alternatives efficaces devraient être prévues. Le Jardin Zen CSS est basé sur une approche pragmatique et fonctionnelle des <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> et non sur les dernières pratiques visibles par seulement 2&nbsp;% des internautes. Notre seul vrai critère est que votre <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> soit valide.</p>
+			<p>Heureusement, concevoir de cette manière démontre comment les différents navigateurs ont maintenant bien implémenté les <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>. En respectant les conventions,	vous devriez constater des résultats assez cohérents sur la plupart des navigateurs modernes. En raison du nombre important d&#8217;agents utilisateurs sur le web, surtout avec la prise en compte du mobile, les rendus ne peuvent pas être toujours précis au pixel près sur toutes les plateformes. Pas de soucis, mais faites autant de tests que possible. Votre design doit au moins être compatible avec IE&nbsp;9 (et versions ultérieures) et avec les dernières versions des navigateurs Chrome, Firefox, iOS et Android (utilisés par plus de 90&nbsp;% du marché).</p>
+			<p>Nous vous demandons de soumettre des créations originales, merci de respecter les droits d&#8217;auteur. S&#8217;il vous plaît, minimisez le contenu répréhensible et essayez d&#8217;inclure dans votre travail des thèmes uniques et intéressants. Nous n&#8217;avons pas besoin d&#8217;un autre design utilisant le thème du jardin.</p>
+			<p>Ceci est aussi bien un exercice d&#8217;apprentissage que de démonstration. Vous gardez les droits d&#8217;auteur de vos graphismes (à quelques exceptions près, cf. «&nbsp;<a lang="en" href="http://www.mezzoblue.com/zengarden/submit/guidelines/">submission guidelines</a>&nbsp;»), mais nous vous demandons de publier votre fichier <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> sous une license Creative Commons identique à <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Voir la license du Jardin Zen">celle de ce site</a> pour que d&#8217;autres personnes puissent apprendre de votre travail.</p>
+			<p role="contentinfo">Par <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bande passante grâcieusement offerte par <a href="http://www.mediatemple.net/">mediatemple</a>. Le livre «&nbsp;<a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">The Zen of CSS Design: Visual Enlightenment for the Web</a>&nbsp;» est maintenant disponible.</p>
+		</div>
+
+		<footer>
+			<a href="http://validator.w3.org/check/referer" title="Vérifier la validité HTML de ce site" class="zen-validate-html">HTML</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Vérifier la validité CSS de ce site" class="zen-validate-css">CSS</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Voir la license Creative Commons de ce site&nbsp;: Attribution - Pas d&#8217;utilisation commerciale - Partage dans les mêmes conditions" class="zen-license">CC</a>
+			<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="En savoir plus sur l&#8217;accessibilité de ce site" class="zen-accessibility">A11y</a>
+			<a href="https://github.com/mezzoblue/csszengarden.com" title="Contribuer à ce projet sur Github" class="zen-github">GH</a>
+		</footer>
+
+	</div>
+
+	<aside class="sidebar" role="complementary">
+		<div class="wrapper">
+
+			<div class="design-selection" id="design-selection">
+				<h3 class="select">Choisissez un design&nbsp;:</h3>
+				<nav role="navigation">
+					<ul>
+					<li>
+						<a href="/tr/fr/221/" class="design-name">Mid Century Modern</a> par						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+					</li>					<li>
+						<a href="/tr/fr/220/" class="design-name">Garments</a> par						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
+					</li>					<li>
+						<a href="/tr/fr/219/" class="design-name">Steel</a> par						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
+					</li>					<li>
+						<a href="/tr/fr/218/" class="design-name">Apothecary</a> par						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
+					</li>					<li>
+						<a href="/tr/fr/217/" class="design-name">Screen Filler</a> par						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
+					</li>					<li>
+						<a href="/tr/fr/216/" class="design-name">Fountain Kiss</a> par						<a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
+					</li>					<li>
+						<a href="/tr/fr/215/" class="design-name">A Robot Named Jimmy</a> par						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
+					</li>					<li>
+						<a href="/tr/fr/214/" class="design-name">Verde Moderna</a> par						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
+					</li>					</ul>
+				</nav>
+			</div>
+
+			<div class="design-archives" id="design-archives">
+				<h3 class="archives">Archives&nbsp;:</h3>
+				<nav role="navigation">
+					<ul>
+						<li class="next">
+							<a href="/tr/fr/000/page1">
+								Designs suivants <span class="indicator">&rsaquo;</span>
+							</a>
+						</li>
+						<li class="viewall">
+							<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="Voir toutes les propositions soumises au Jardin Zen CSS.">
+								Voir tous les designs							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="zen-resources" id="zen-resources">
+				<h3 class="resources">Ressources&nbsp;:</h3>
+				<ul>
+					<li class="view-css">
+						<a href="/000/000.css" title="Voir le fichier CSS source de la mise en forme en cours.">
+							Voir le <abbr lang="en" title="Cascading Style Sheets">CSS</abbr> de ce design						</a>
+					</li>
+					<li class="css-resources">
+						<a href="http://www.mezzoblue.com/zengarden/resources/" title="Liens vers de bons sites avec des informations sur l&#8217;utilisation de CSS.">
+							Ressources <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>						</a>
+					</li>
+					<li class="zen-faq">
+						<a href="http://www.mezzoblue.com/zengarden/faq/" title="Une liste de questions souvent posées au sujet du Jardin Zen CSS.">
+							<abbr title="Foire Aux Questions">FAQ</abbr>						</a>
+					</li>
+					<li class="zen-submit">
+						<a href="http://www.mezzoblue.com/zengarden/submit/" title="Envoyez-nous votre propre fichier CSS.">
+							Soumettre un design						</a>
+					</li>
+					<li class="zen-translations">
+						<a href="http://www.mezzoblue.com/zengarden/translations/" title="Voir les traductions de cette page.">
+							Traductions						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+
+</div>
+
+<!--
+
+	Ces div et span superflus ont été fournis initialement comme fourre-tout pour ajouter des images supplémentaires.
+	Actuellement nous disposons du support complet de ::before et ::after, privilégiez plutôt leur utilisation.
+	Ces balises sont conservées uniquement pour la compatibilité des anciennes mises en formes. Elles pourraient disparaître un jour.
+		
+-->
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+
+</body>
+</html>
