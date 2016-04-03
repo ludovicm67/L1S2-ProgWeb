@@ -14,7 +14,7 @@ Réalisez ce site.
 
 Voilà diverses étapes pour vous aider à réaliser ce site :
 
- * Écrivez du code capable d'afficher l'un en-dessous de l'autre les éléments d'un tableau JavaScript dans ´
+ * Écrivez du code capable d'afficher l'un en-dessous de l'autre les éléments d'un tableau JavaScript dans
 des champs de consultation
 
  * Réalisez la fonction permettant de transformer un champ de consultation en champ d'édition lors d'un
