@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<title>Photos</title>
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+	#global {
+		text-align: center;
+	}
+	.picture-box {
+		display: inline-block;
+		position: relative;
+		width: 400px;
+		height: 200px;
+		overflow: hidden;
+	}
+	.picture-legend {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .8);
+		color: #fff;
+		line-height: 200px;
+		font-size: 36px;
+		opacity: 0;
+		transition: 1s;
+	}
+</style>
+</head>
+<body>
+	<div id="global">
+		<div class="picture-box">
+			<img src="http://lorempixel.com/390/200/" width="400" height="200" alt="Photo1">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/391/200/" width="400" height="200" alt="Photo2">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/392/200/" width="400" height="200" alt="Photo3">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/393/200/" width="400" height="200" alt="Photo4">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/395/200/" width="400" height="200" alt="Photo5">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/396/200/" width="400" height="200" alt="Photo6">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/397/200/" width="400" height="200" alt="Photo7">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/398/200/" width="400" height="200" alt="Photo8">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/399/200/" width="400" height="200" alt="Photo9">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/400/200/" width="400" height="200" alt="Photo10">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/401/200/" width="400" height="200" alt="Photo11">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/402/200/" width="400" height="200" alt="Photo12">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/403/200/" width="400" height="200" alt="Photo13">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/404/200/" width="400" height="200" alt="Photo14">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/405/200/" width="400" height="200" alt="Photo15">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/406/200/" width="400" height="200" alt="Photo16">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/407/200/" width="400" height="200" alt="Photo17">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/408/200/" width="400" height="200" alt="Photo18">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/409/200/" width="400" height="200" alt="Photo19">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/410/200/" width="400" height="200" alt="Photo20">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/407/201/" width="400" height="200" alt="Photo21">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/408/201/" width="400" height="200" alt="Photo22">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/409/201/" width="400" height="200" alt="Photo23">
+		</div>
+		<div class="picture-box">
+			<img src="http://lorempixel.com/410/201/" width="400" height="200" alt="Photo24">
+		</div>
+	</div>
+<script>
+	// L'ensembles des images
+	var pics = document.querySelectorAll('.picture-box');
+
+	// An ajoute à chaque fois la légende pour chaque image
+	for (var i = 0; i < pics.length; i++) {
+		var currentPicBox = pics[i];
+		var currentImg = currentPicBox.querySelector('img');
+		var currentImgDescription = currentImg.alt;
+		var legend = document.createElement('div');
+		legend.innerHTML = currentImgDescription;
+		legend.className = 'picture-legend';
+		currentPicBox.appendChild(legend);
+
+		// Fonction qui affiche la légende lors du passage de la souris
+		currentPicBox.addEventListener('mouseover', function () {
+			this.querySelector('.picture-legend').style.opacity = 1;
+		});
+		// Fonction qui cache à nouveau la légende après le passage sur la photo
+		currentPicBox.addEventListener('mouseout', function () {
+			this.querySelector('.picture-legend').style.opacity = 0;
+		});
+	}
+</script>
+</body>
+</html>
