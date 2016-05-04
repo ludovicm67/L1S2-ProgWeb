@@ -1,7 +1,7 @@
 # 1 - Manipulation événementielle du DOM
 
 Dans cet exercice, on s'intéressera à l'utilisation des événements pour manipuler le DOM.
- * Téléchargez le fichier `fichier_a_manipuler.html` (disponible dans ce répertoire)
+ * Téléchargez le fichier `fichier_a_manipuler.html`
  * Ajouter le code permettant d'ajouter un cardre bleu autour du premier élément de la liste *bar* lorsque l'utilisateur clique sur le paragraphe *foo*.
  * Ajoutez le code nécessaire de sorte que lorsque l'utilisateur passe la souris sur le mot emphasé dans *foo*, le deuxième élément de la liste *bar* soit dupliqué.
  * Ajoutez du code pour que lorsque l'utilisateur clique sur un élément de la liste, celui-ci soit supprimé et son contenu affiché dans la division *out*.
