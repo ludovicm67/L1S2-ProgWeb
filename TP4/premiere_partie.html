@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events and DOM manipulation</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h1>DOM manipulation using JavaScript</h1>
+  <section>
+    <h2>Une section aléatoire</h2>
+    <p id="foo">Hello, I'm a <code>p</code> tag with the id <code>foo</code>. I contain an emphasized word: <em>cajeput</em>.</p>
+    <ul id="bar">
+      <li>I'm the first item of the list with the id <code>bar</code>.</li>
+      <li>I'm the second item.</li>
+      <li>That one's the third item!.</li>
+    </ul>
+    <div id="out">I'm the <code>out</code> div.</div>
+  </section>
+<script>
+var foo = document.getElementById('foo');
+var bar = document.getElementById('bar');
+var out = document.getElementById('out');
+
+function refreshIndices() {
+	var li = bar.querySelectorAll('li');
+	for (var i = 0; i < li.length; i++) {
+		li[i].dataset.indice = i;
+	}
+}
+
+foo.addEventListener('click', function () {
+	bar.querySelector('li').style.border = "5px solid #2980b9";
+});
+
+foo.querySelector('em').addEventListener('mouseover', function () {
+	var secondItem = bar.querySelectorAll('li')[1].cloneNode(true);
+	secondItem.addEventListener('click', function () {
+		alert(this.dataset.indice);
+		this.parentNode.removeChild(this);
+		out.innerHTML += '<br>' + this.innerHTML;
+	});
+	bar.insertBefore(secondItem, bar.querySelectorAll('li')[1]);
+	refreshIndices();
+});;
+
+var li = bar.querySelectorAll('li');
+for (var i = 0; i < li.length; i++) {
+	li[i].dataset.indice = i;
+	li[i].addEventListener('click', function () {
+		alert(this.dataset.indice);
+		this.parentNode.removeChild(this);
+		out.innerHTML += '<br>' + this.innerHTML;
+	});
+}
+
+document.onkeypress = function(e) {
+	var key;
+
+	if(window.event) key = e.keyCode;
+	else if(e.which) key = e.which;
+
+	if(String.fromCharCode(key) == 'a') {
+		var newItem = document.createElement('li');
+		newItem.addEventListener('click', function () {
+			alert(this.dataset.indice);
+			this.parentNode.removeChild(this);
+			out.innerHTML += '<br>' + this.innerHTML;
+		});
+		newItem.textContent = prompt('Nouvel item :');
+		bar.appendChild(newItem);
+		refreshIndices();
+	}
+
+}
+
+</script>
+</body>
+</html>

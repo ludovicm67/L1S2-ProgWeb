@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<title>Couleurs à gogo</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: sans-serif;
+			font-size: 16px;
+		}
+
+		#colors {
+			background-color: #000;
+			min-width: 200px;
+			min-height: 200px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="colors">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolor magni ratione, et voluptatibus, dolores impedit fuga vero totam nemo? Ipsum minima, sequi laboriosam quis iusto earum repellat qui quibusdam.</p>
+		<p>Deleniti amet quod ullam a reiciendis, architecto vel nostrum qui. Nihil velit quibusdam quos iusto facere, pariatur soluta quidem debitis minima odit, dolor perspiciatis nulla maiores minus. Omnis, laudantium, quod!</p>
+		<p>Aperiam molestias dolores, natus! Nobis voluptatem officia enim minus aut repudiandae atque molestiae commodi repellendus tenetur reiciendis fuga magnam quo, quam amet consequuntur a ullam doloremque eum provident molestias. Tenetur.</p>
+		<p>Ab alias voluptatum aut placeat optio, veniam! Consectetur deserunt deleniti temporibus libero neque ipsum sed. Similique reprehenderit in quos, excepturi doloribus. Ducimus soluta, harum a ipsum perspiciatis cupiditate velit, tenetur.</p>
+		<p>Modi, error at sunt quisquam quasi beatae dolores facere explicabo a tenetur eligendi mollitia temporibus vitae delectus! Suscipit quia in, molestias rerum quaerat, quos, dolores veritatis totam iste nisi aspernatur!</p>
+		<p>Veniam natus soluta molestiae quam earum? Nobis perspiciatis molestiae ex omnis rem dolorem nemo doloribus nesciunt vero libero, quod cumque atque illo doloremque temporibus tenetur quia inventore assumenda quas molestias?</p>
+		<p>Earum sequi expedita ipsam fuga deleniti repellendus quis nemo ad libero, quo sunt quod quasi fugiat, quae nobis. Impedit totam molestias, illo corporis porro dolorem dolor. Velit, a laboriosam at.</p>
+		<p>Hic enim excepturi ex sed sunt labore qui omnis placeat ratione, officia eius fuga perspiciatis rerum quaerat natus, cum voluptatibus alias nihil mollitia id! Doloribus unde, facere dicta eum vel.</p>
+		<p>Tempora soluta quam asperiores nostrum commodi delectus, labore officia assumenda, rem, impedit error voluptatem maxime placeat iste a perferendis, eligendi cum est quas optio quos blanditiis. Culpa, illo, tenetur. Ipsum.</p>
+		<p>Illo rem incidunt doloremque pariatur hic, veniam impedit error tempore voluptate voluptates fugiat ducimus! Quas illo sapiente ipsa, corporis quod voluptatem aliquam dolores eum. Nobis, dolorem, vero! Commodi, quos, suscipit.</p>
+		<label for="caca">Input de test :</label><input type="text" id="caca" placeholder="zaazeae">
+	</div>
+<script>
+var colors = document.getElementById('colors');
+
+colors.addEventListener('click', function (e) {
+	colors.style.backgroundColor = 'hsl(' + e.clientX + ', 50%, 50%)';
+	colors.style.color = 'hsl(' + e.clientY + ', 50%, 50%)';
+
+	// 12 100
+	// 42 ?
+});
+</script>
+</body>
+</html>
