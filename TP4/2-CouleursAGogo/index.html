@@ -17,6 +17,7 @@
 
 		#colors {
 			background-color: #000;
+			padding: 20px;
 			min-width: 200px;
 			min-height: 200px;
 			position: absolute;
@@ -29,6 +30,7 @@
 </head>
 <body>
 	<div id="colors">
+		<p>Bah voici un p'tit coup de lorem pour faire style qu'il y a beaucoup de contenu =P</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolor magni ratione, et voluptatibus, dolores impedit fuga vero totam nemo? Ipsum minima, sequi laboriosam quis iusto earum repellat qui quibusdam.</p>
 		<p>Deleniti amet quod ullam a reiciendis, architecto vel nostrum qui. Nihil velit quibusdam quos iusto facere, pariatur soluta quidem debitis minima odit, dolor perspiciatis nulla maiores minus. Omnis, laudantium, quod!</p>
 		<p>Aperiam molestias dolores, natus! Nobis voluptatem officia enim minus aut repudiandae atque molestiae commodi repellendus tenetur reiciendis fuga magnam quo, quam amet consequuntur a ullam doloremque eum provident molestias. Tenetur.</p>
@@ -42,11 +44,19 @@
 	</div>
 <script>
 
+// Notre élément à colorier
 var colors = document.getElementById('colors');
 
+// Lors d'un clic sur la div#colors, on colorie !
+// Note: on a choisit de colorier en utilisant hsl; c'est fait en un rien de temps ;)
 colors.addEventListener('click', function (e) {
-	colors.style.backgroundColor = 'hsl(' + e.clientX + ', 50%, 50%)';
-	colors.style.color = 'hsl(' + e.clientY + ', 50%, 50%)';
+
+	// La couleur du texte dépend de la position horizontale du clic
+	colors.style.color           = 'hsl(' + e.clientX + ', 50%, 50%)';
+
+	// La couleur de fond dépend de la position verticale du clic
+	colors.style.backgroundColor = 'hsl(' + e.clientY + ', 50%, 50%)';
+
 });
 
 </script>
