@@ -15,6 +15,6 @@ Suivez les instructions suivantes pour réaliser ce programme :
  * Réalisez une fonction permettant de vérifier que l'entrée de l'utilisateur est bien un entier entre 0 et 1 000. Affichez une erreur si ce n'est pas le cas.
  * Si le nombre entré par l'utilisateur est le bon, un message de félicitations l'informant du nombre de coups que cela a pris doit être affiché. Réalisez la ou les fonctions nécessaires.
 
-# Notes personnelles concernant ma réalisation
+# Note personnelle concernant ma réalisation
 
 J'ai choisis volontairement de faire un style minimaliste, en occupant tout l'espace. J'aurais encore pu ajuster les marges intérieures (padding), jouer avec les couleurs, la taille du texte, etc... Mais cela chacun peut le faire suivant ses propres goûts, et cela permet à toutes les personnes consultant ce code d'avoir un code propre et simple à comprendre. J'ai également pris soin de bien commenter mon JavaScript, donc normalement tout devrait être assez clair.
