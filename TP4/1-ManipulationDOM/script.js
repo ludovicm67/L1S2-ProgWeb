@@ -11,6 +11,13 @@ function refreshIndices() {
 	}
 }
 
+// Permet de supprimer un item
+function deleteItem() {
+	alert(this.dataset.indice);
+	this.parentNode.removeChild(this);
+	out.innerHTML += '<br>' + this.innerHTML;
+}
+
 // On ajoute un cadre bleu au premier 'li' lors d'un clic sur #foo
 foo.addEventListener('click', function () {
 	bar.querySelector('li').style.border = "5px solid #2980b9";
@@ -19,11 +26,7 @@ foo.addEventListener('click', function () {
 // Si on passe a souris sur '#foo > em', on dupplique le second 'li'
 foo.querySelector('em').addEventListener('mouseover', function () {
 	var secondItem = bar.querySelectorAll('li')[1].cloneNode(true);
-	secondItem.addEventListener('click', function () {
-		alert(this.dataset.indice);
-		this.parentNode.removeChild(this);
-		out.innerHTML += '<br>' + this.innerHTML;
-	});
+	secondItem.addEventListener('click', deleteItem);
 	bar.insertBefore(secondItem, bar.querySelectorAll('li')[1]);
 	refreshIndices();
 });;
@@ -32,11 +35,7 @@ foo.querySelector('em').addEventListener('mouseover', function () {
 var li = bar.querySelectorAll('li');
 for (var i = 0; i < li.length; i++) {
 	li[i].dataset.indice = i;
-	li[i].addEventListener('click', function () {
-		alert(this.dataset.indice);
-		this.parentNode.removeChild(this);
-		out.innerHTML += '<br>' + this.innerHTML;
-	});
+	li[i].addEventListener('click', deleteItem);
 }
 
 // En cas d'appuie sur la touche 'a', on ajoute un nouvel item
@@ -52,11 +51,7 @@ document.onkeypress = function(e) {
 		var newItem = document.createElement('li');
 
 		// Ajout de l'événement en cas de clic
-		newItem.addEventListener('click', function () {
-			alert(this.dataset.indice);
-			this.parentNode.removeChild(this);
-			out.innerHTML += '<br>' + this.innerHTML;
-		});
+		newItem.addEventListener('click', deleteItem);
 
 		newItem.textContent = prompt('Nouvel item :');
 		bar.appendChild(newItem);
