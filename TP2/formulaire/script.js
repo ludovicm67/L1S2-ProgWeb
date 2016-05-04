@@ -32,9 +32,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
 			inputs[el.name] = (el.checked) ? strip_tags(el.value) : 0;
 		} else if(el.type == 'radio') {
 			if(el.checked && !(el.name in inputs)) inputs[el.name] = strip_tags(el.value);
-		} else {
-			inputs[el.name] = strip_tags(el.value);
-		}
+		} else inputs[el.name] = strip_tags(el.value);
 	}
 
 	// On vérifie si l'utilisateur a bien accepté les CGU

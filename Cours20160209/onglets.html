@@ -150,15 +150,15 @@
 		</div>
 	</div>
 	<script>
+		// On récupère tous les boutons
 		var allButtons = document.querySelectorAll('.menuButton');
+
+		// On ajoute l'action permettant de changer d'onglet
 		for (var i = 0; i < allButtons.length; i++) {
-			allButtons[i].addEventListener(
-				"click",
+			allButtons[i].addEventListener("click",
 				function () {
 					var allOnglets = document.querySelectorAll('.onglet');
-					for (var j = 0; j < allOnglets.length; j++) {
-						allOnglets[j].style.display = 'none';
-					}
+					for (var j = 0; j < allOnglets.length; j++) allOnglets[j].style.display = 'none';
 					document.getElementById(this.dataset.target).style.display = 'block';
 				}
 			)

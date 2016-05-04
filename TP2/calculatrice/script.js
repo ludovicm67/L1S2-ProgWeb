@@ -30,6 +30,7 @@ for (var i = 0; i < btn.length; i++) {
 
 		// Si le bouton est un nombre entier
 		if(Number.isInteger(parseInt(this.innerHTML))) zone.value += this.innerHTML;
+
 		// Sinon il s'agit d'un opérateur
 		else if(zone.value != '') {
 
