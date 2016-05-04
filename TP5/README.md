@@ -1,3 +1,7 @@
+# Voir le résultat
+
+Pour voir le rendu de ce script, vous pouvez vous rendre sur la page suivante : https://rawgit.com/ludovicm67/L1S2-ProgWeb/master/TP5/index.html
+
 # Formulaires et JavaScript
 
 Dans cet exercice, vous allez réaliser un petit jeu de devinette en associant du JavaScript à un formulaire.
