@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <title>TODO list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="global">
+
+    <header>
+      <h1>TODO list</h1>
+      <h2>Votre liste de choses à faire</h2>
+    </header>
+
+    <div class="content">
+      <div class="list">
+        <div id="noteList"></div>
+        <div class="noteFooter">
+          <form>
+            <input id="noteInput" type="text" placeholder="Chose à faire..." autofocus>
+            <button id="noteAdd">Ajouter</button>
+          </form>
+          <div>
+            <button id="noteRemoveAllDone">Supprimer tous les éléments marqués comme terminés</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
